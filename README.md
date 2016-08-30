@@ -1,5 +1,15 @@
 # Docker ELK stack
 
+## demo
+```
+git checkout v1.0-google-cloud-ok
+```
+```
+netcat <your docker machine ip> 5000 < *.log
+or 
+nc <your docker machine ip> 5000 < *.log
+```
+
 [![Join the chat at https://gitter.im/deviantony/docker-elk](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/deviantony/docker-elk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Run the latest version of the ELK (Elasticseach, Logstash, Kibana) stack with Docker and Docker-compose.
