@@ -1,0 +1,27 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    service: kibana
+  name: kibana
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: kibana
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        service: kibana
+    spec:
+      containers:
+      - name: kibana
+        ports:
+        - containerPort: 5601
+          protocol: TCP
+        resources: {}
+      restartPolicy: Always
+status: {}
