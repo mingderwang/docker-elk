@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "ming-search-example",
+    "_type": "search",
+    "_source": {
+      "title": "ming-search-example",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "verb",
+        "port",
+        "message"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+      }
+    }
+  }
+]
